@@ -1,0 +1,64 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    margin: 0;
+    padding: 0;
+    background-image: url('BG.jpg');
+    background-size: cover; /* Ensures the background image covers the entire page */
+    background-position: center; /* Centers the background image */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    color: hotpink;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Home button styles */
+#homeBtn {
+    display: block;
+    margin: 10px auto; /* Center the button horizontally */
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #595959;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+#homeBtn:hover {
+    background-color: #003d80;
+}
+
+#container {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.box {
+    padding: 20px; /* Add space inside the box */
+    margin: 15px 0; /* Add space between boxes */
+    background: linear-gradient(135deg, #ff5722, #ff9800); /* Richer and bolder gradient colors */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
+    font-size: 18px; /* Slightly larger font size */
+    font-family: 'Times New Roman', Times, serif; /* Elegant font */
+    font-style: italic; /* Add italic style */
+    font-weight: bold;
+    color: black; /* White text for contrast */
+    text-align: left; /* Align text to the left */
+    line-height: 1.8; /* Add spacing between lines */
+    border: 2px solid rgba(255, 255, 255, 0.7); /* Slightly brighter border */
+}
+
+/* Add hover effect for interactivity */
+.box:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Enhance shadow on hover */
+    background: linear-gradient(135deg, #ff9800, #ff5722); /* Reverse gradient on hover */
+}

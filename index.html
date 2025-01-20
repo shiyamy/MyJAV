@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My JAV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon6.ico">
+</head>
+<body>
+    <div class="container">
+        <!-- Top Section -->
+        <div class="top-section">
+            <button id="actressBtn">👄 Actress</button>
+            <button id="rateBtn">💖 Rating</button><!-- ⭐ -->
+            <div class="search-container">
+                <input type="text" id="searchBox" placeholder="e.g. ABC-123">
+                <button id="searchBtn">🔍 ID Search</button>
+            </div>
+            <button id="titleBtn">🎬 Title</button>
+            <button id="folderBtn">📂 Folder</button>
+        </div>
+
+        <!-- Middle Section -->
+        <div class="middle-section">
+            <div class="box id-box">
+                <span id="idLabel">ID</span>
+                <div id="idBox" class="bold-text"></div>
+            </div>
+            <div class="box title-box">
+                <span id="titleLabel">Title</span>
+                <div id="titleBox" class="bold-text"></div>
+            </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="bottom-section">
+            <div class="left-panel">
+                <img id="photo" src="main.jpg" alt="No Image Found">
+            </div>
+            <div class="right-panel">
+                <div>
+                    <label>ID:</label>
+                    <div id="bottomID" class="container-box"></div>
+                </div>
+
+                <!-- Heart Rating Section -->
+                <div id="ratingSection">
+                    <label>Rating:</label>
+                    <div id="heartRating" class="heart-rating">
+                        <span class="heart">&#10084;</span>
+                        <span class="heart">&#10084;</span>
+                        <span class="heart">&#10084;</span>
+                        <span class="heart">&#10084;</span>
+                        <span class="heart">&#10084;</span>
+                        <span class="heart">&#10084;</span>
+                        <span class="heart">&#10084;</span>
+                    </div>
+                </div>
+
+                <div>
+                    <label>Actress:</label>
+                    <div id="actressContainer" class="container-box"></div>
+                </div>
+                <div>
+                    <label>Folder:</label>
+                    <div id="slatContainer" class="container-box"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="mapRating.js"></script>
+    <script src="mapTitle.js"></script>
+    <script src="mapActrssMv.js"></script>
+    <script src="mapSlat.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

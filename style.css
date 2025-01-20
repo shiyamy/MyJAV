@@ -1,0 +1,200 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('BG.jpg');
+    background-size: cover; /* Ensures the background image covers the entire page */
+    background-position: center; /* Centers the background image */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7%;
+    background-color: transparent; /* Makes background transparent */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    border-bottom: 1px solid transparent; /* Makes the bottom border transparent */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    color: white;
+    background-color: #8e44ad;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #9b59b6;
+    transform: translateY(-2px);
+}
+
+#searchBox {
+    padding: 10px;
+    font-size: 16px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.middle-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 8%;
+    background-color: transparent; /* Makes background transparent */
+    border-bottom: 1px solid transparent; /* Makes the bottom border transparent */
+}
+
+.middle-section .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.id-box {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid transparent; /* Makes the right border transparent */
+}
+
+.title-box {
+    flex: 15;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.bold-text {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.bottom-section {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex: 1;
+    background-color: transparent; /* Makes background transparent */
+}
+
+.left-panel {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent; /* Makes background transparent */
+    border-right: 1px solid transparent; /* Makes the right border transparent */
+}
+
+#photo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+    border: 3px solid #8e44ad;
+}
+
+.right-panel {
+    flex: 1;
+    padding: 20px;
+    background-color: transparent; /* Makes background transparent */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-left: 1px solid transparent; /* Makes the left border transparent */
+}
+
+.right-panel div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.right-panel label {
+    margin-right: 15px;
+    width: 100px;
+    text-align: right;
+    justify-content: center;
+    font-weight: bold;
+    color: aqua;
+    font-size: 20px;
+}
+
+.heart-rating {
+    display: flex;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.heart {
+    font-size: 24px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.heart.filled {
+    color: #e74c3c;
+}
+
+.container-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    /*border: 1px solid transparent; /* Makes the border transparent */
+    border-radius: 5px;
+    min-height: 30px;
+    background: linear-gradient(135deg, gray, blue);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #333;
+    word-wrap: break-word;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.container-box a {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.container-box a:hover {
+    color: #ff9800;
+    text-decoration: underline;
+}
+
+/* Adding transitions for hover effects */
+button, .heart, .container-box a {
+    transition: all 0.2s ease-in-out;
+}
+
+button:active {
+    transform: translateY(1px);
+}
